@@ -1,16 +1,53 @@
-# React + Vite
+# 🤖 AI-Powered Email Assistant (Full Stack + Chrome Extension)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An advanced AI-based web application and Chrome extension that automatically generates professional and context-aware email replies using **Google Gemini API**.  
+The system includes a full-stack architecture — a **Spring Boot backend** that connects with Gemini, and a **React + Material UI frontend** for a smooth user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ✉️ **Smart Email Reply Generation** – Generates intelligent replies based on the input email content.  
+- 🎯 **Tone & Style Selection** – Choose between multiple tones (Formal, Friendly, Short, etc.).  
+- ⚙️ **Full Stack Integration** – Spring Boot backend interacts with Gemini API; React handles UI.  
+- 🧠 **AI-Powered Logic** – Uses Google Gemini for natural and contextually relevant responses.  
+- 🧩 **Chrome Extension Support** – Allows you to use the assistant directly inside Gmail.  
+- 💾 **Postman Tested** – All APIs tested and verified via Postman before frontend integration.  
+- 💡 **Clean UI** – Built with Material UI and React Hooks for responsiveness and simplicity.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧑‍💻 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | React.js (Vite), Material UI (MUI v5), JavaScript (ES6+), HTML5, CSS3 |
+| **Backend** | Spring Boot, Lombok, WebClient |
+| **AI Integration** | Google Gemini API |
+| **Testing Tools** | Postman |
+| **Extension** | Chrome Extension (Manifest v3) |
+| **Build Tools** | Maven, npm |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🧠 How It Works
+
+1. The user **pastes an email** or selects it inside Gmail (via Chrome Extension).  
+2. The **frontend (React)** sends this content to the **Spring Boot backend**.  
+3. The backend uses **Google Gemini API** to generate a contextual reply.  
+4. The response is sent back to the UI or directly shown in the Gmail compose box.  
+5. User can **edit, copy, or send** the AI-generated email reply.
+
+---
+
+## ⚙️ Installation & Setup
+
+### 🧩 Frontend (React + MUI)
+
+```bash
+git clone https://github.com/your-username/ai-email-assistant.git
+cd ai-email-assistant/frontend
+npm install
+npm run dev
+
